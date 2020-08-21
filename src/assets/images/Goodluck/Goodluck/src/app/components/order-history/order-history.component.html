@@ -1,0 +1,58 @@
+<!-- <ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Order History</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="secondary" >
+      <ion-button>
+        <ion-icon name="search"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <!-- <img src="./assets/imgs/logo.png" class="logo"/> -->
+    <ion-title style="color: white;">Order History</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div style="padding: 1px;">
+    <table class="data">
+      <tr (click)="orderDetail()" *ngFor="let item of orderData">
+        <th>
+          <!-- <h6><b>Product Name</b></h6> -->
+          <p>{{item.rowid}}</p>
+          <p style="color: #3880ff;font-weight: normal;">Ordered  12th March 19</p>
+          <!-- <p>Price:&#8377;580</p> -->
+          <p style="color: green;font-weight: normal;">Delivered Thursday 12th April 19</p>
+        </th>
+        <!-- <th ><img src="./assets/images/product1.jpg" style="border-radius: 5px;width: 68px;" /></th> -->
+      </tr>
+      <!-- <tr (click)="orderDetail()">
+        <th>
+          <h6><b>Product Name</b></h6>
+          <p>ORDERABCD12387209</p>
+          <p style="color: #3880ff;font-weight: normal;">Ordered  12th March 19</p>
+          <p>Price:&#8377;580</p>
+          <p style="color: red;font-weight: normal;">Delivery Expected Monday 21th April 19</p>
+        </th>
+        <th ><img src="./assets/images/product1.jpg" style="border-radius: 5px;width: 68px;" /></th>
+      </tr>
+      <tr (click)="orderDetail()">
+        <th>
+          <h6><b>Product Name</b></h6>
+          <p>ORDERABCD12387209</p>
+          <p style="color: #3880ff;font-weight: normal;">Ordered  12th March 19</p>
+          <p>Price:&#8377;580</p>
+          <p style="color: green;font-weight: normal;">Delivered Thursday 12th Martch 19</p>
+        </th>
+        <th ><img src="./assets/images/product1.jpg" style="border-radius: 5px;width: 68px;" /></th>
+      </tr> -->
+    </table>
+  </div>
+</ion-content>

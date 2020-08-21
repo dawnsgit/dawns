@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+    <ion-title>{{subCategoryName}}</ion-title>
+  </ion-toolbar>
+  <ion-searchbar *ngIf="isOn" [(ngModel)]="searchval" (change)="searchvideos(searchval)"></ion-searchbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <div *ngFor="let item of subCategoryData" (click)="subCategoryProduct(item.sub_category_id,item.sub_category_name)">
+    <ion-item>
+      <ion-label  [innerHTML]="item.sub_category_name"></ion-label>
+      <ion-icon name="arrow-forward" color="primary" slot="end"></ion-icon>
+    </ion-item>
+  </div>
+  </ion-list>
+</ion-content>

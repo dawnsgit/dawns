@@ -1,0 +1,104 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <!-- <ion-buttons slot="secondary" (click)="addAddress()">
+      <ion-button>
+        Add Address
+      </ion-button>
+    </ion-buttons> -->
+    <ion-title>Order Summery</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div style="padding-left:10px">
+    <h6 style="margin-bottom: 0.2rem;">Mr Abc Kumar <ion-chip style="background-color: white;">
+      <ion-label color="primary">Home</ion-label>
+    </ion-chip></h6>
+    <p style="margin-bottom: 0.2rem;">Goregaon,East Borivali-400650 Mumbai</p>
+    <p>9458706556</p>
+    <p style="text-align: center;"><ion-button shape="round"  (click)="changeAddress()">Change or Add Address</ion-button></p>
+  </div>
+  <!-- <div style="padding: 5px;">
+    <h6><b>Change Address:</b></h6>
+  <ion-item style="border: 1px solid #3880ff;border-radius: 2px;">
+    <ion-label>Select Your Address:</ion-label>
+    <ion-select placeholder="Select One">
+      <ion-select-option value="Pune">Pune</ion-select-option>
+      <ion-select-option value="Nasik">Nasik</ion-select-option>
+      <ion-select-option value="Nagpur">Nagpur</ion-select-option>
+    </ion-select>
+  </ion-item>
+</div> -->
+  <ion-card [hidden]="!showEmptyCartMessage">
+    <ion-grid>
+      <ion-row>
+        <ion-col>There are no products in your cart!</ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+  <div style="padding: 1px;">
+    <table class="data">
+      <tr *ngFor="let product of cartValue; let i=index">
+        <th ><img src="https://rbtech.in/GOODLUCK/{{product.image_small}}" style="border-radius: 5px;width: 158px;" /></th>
+        <th>
+          <h6><b>{{product.ProductName}}</b></h6>
+          <p style="margin-bottom: 0.2rem;">Price:&#8377;{{product.Total_val_enc}}</p>
+          <p>Qty:{{product.qty}}&nbsp;{{product.unit}}</p>
+        </th>
+        <!-- <th>
+          <h5>
+            <ion-icon name="trash-outline" style="font-size: 1.1rem;color: red;" (click)="removeFromCart(product,i)"></ion-icon>
+          </h5>
+          <ion-icon name="pencil-outline" style="font-size: 1.1rem;color: green;"  (click)="editCartProduct(product.product.PID)"></ion-icon>
+        </th> -->
+      </tr>
+    </table>
+  </div>
+  <div style="padding: 5px;background: rgb(240, 244, 245);border-radius: 5px;">
+    <h6><b>Price Details</b></h6>
+    <ion-row>
+      <ion-col class="ion-text-left">
+        Price({{lengthItem}} item)
+      </ion-col>
+
+      <ion-col class="ion-text-right">
+        &#8377;{{total}}
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-text-left">
+        Delivery Chages
+      </ion-col>
+
+      <ion-col class="ion-text-right">
+        Free
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-text-left">
+        <b> Amount Payble</b>
+      </ion-col>
+
+      <ion-col class="ion-text-right">
+        <b>&#8377;{{total}}</b>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col class="ion-text-center">
+          <ion-button [routerLink]="'/productlist/'" shape="round" routerDirection="forward">Shop More</ion-button>
+        </ion-col>
+        <ion-col class="ion-text-center">
+          <ion-button shape="round" (click)="paymentMethod()">Payment</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-footer>

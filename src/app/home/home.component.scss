@@ -1,0 +1,147 @@
+.placeholder::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #fff;
+  }
+  .placeholder::-moz-placeholder { /* Firefox 19+ */
+    color: #fff;
+  }
+  .placeholder:-ms-input-placeholder { /* IE 10+ */
+    color: #fff;
+  }
+  .placeholder:-moz-placeholder { /* Firefox 18- */
+    color: #fff;
+  }
+  .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+    outline: none;
+  }
+  
+.form-slider {
+    background: #FF9933;
+    padding: 20px 20px 25px;
+    border-radius: 20px;
+    opacity: 0.95;
+}
+h3.form-header {
+    text-align: center;
+    color: #fff;
+    margin-top: 0px;
+    font-family: serif;
+}
+p.form-text {
+    text-align: center;
+    color: #fff;
+    margin: 0px 81px 15px 81px;
+}
+.form-part {
+    position: absolute;
+    right: 10%;
+    top: 2.8%;
+    z-index: 9999;
+}
+.form-control {
+    background: #FAB674;
+    border-radius: 5px;
+}
+.connect-btn {
+    background: #fff;
+    width: 100%;
+    padding: 13px;
+    color: #FF9933;
+}
+.textoverlay {
+    position: absolute;
+    color: #FFF;
+    font-size: 12px;
+    display: block;
+    width: 32%;
+    top: 20%;
+    left: 10%;
+}
+h1.slide-txt {
+    color: #fff;
+    font-family: serif;
+}
+p.slide-text-p {
+    font-size: 15px;
+}
+.width_search {
+    width: 100%;
+    margin: 0 auto;
+}
+.margin-top-25px {
+    margin-top: 25px;
+}
+.margin-top60px {
+    margin-top: 60px;
+}
+.heading_font_width {
+    width: 15%;
+}
+.date_select {
+    color: #fff;
+    background: #FF9933;
+    width: 100%;
+    top: 7%;
+}
+.sub_h2 {
+    margin-left: 20px;
+}
+.bg_Volunteer {
+    background-color: #FF9933 !important;
+}
+.volunteer_btn {
+    background-color: #fff !important;
+    color: #FF9933;
+}
+.slider_search {
+    border-radius: 4px !important;
+}
+.btn-slide-search {
+    height: 38px !important;
+    margin: 3px 5px !important;
+    border-radius: 3px !important;
+    min-width: 100px !important;
+
+}
+.course_border {
+    border-bottom: 1px solid #e0e0e0;
+    margin: 0 0 11px;
+    padding: 0 0 13px;
+}
+.font-color-prize {
+    color: #A2A7AD;
+}
+.star_course {
+    background: #fff;
+    position: absolute;
+    top: 82%;
+    margin-left: 11px;
+    border-radius: 3px;
+    padding: 0px 6px;
+    font-size: 12px;
+}
+i.fa.fa-star.star_design {
+    color: #FF9933;
+    margin-right: 7px;
+}
+.star_design_o {
+    color: #FF9933;
+}
+.academy_works {
+    color: #0e1928;
+    text-align: left;
+    font-family: serif;
+}
+.journey_h2 {
+    color: #ffffff;
+    text-align: center;
+    font-family: serif;
+}
+.margin_bt40 {
+    margin-bottom: 40px;
+} 
+.ml14px {
+    margin-left: 14px;
+}
+.btn_blog {
+    width: 20%;
+}

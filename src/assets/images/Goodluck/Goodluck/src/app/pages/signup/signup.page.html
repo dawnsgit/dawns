@@ -1,0 +1,46 @@
+<ion-content class="google-bg">
+  <div class="main">
+    <div class="card-columns">
+      <ion-row>
+        <ion-col>
+          <ion-img class="logo" src="./assets/imgs/logo.png"></ion-img>
+        </ion-col>
+      </ion-row>
+      <div class="card bg-light">
+        <div class="card-body text-center">
+          <ion-row>
+            <ion-col>
+              <div class="container">
+                <input type="text" placeholder="Enter First Name" [(ngModel)]="firstname" name="firstname"  required />
+                <input type="text" placeholder="Enter Last Name" [(ngModel)]="lastname" name="lastname"  required />
+                <input type="text" placeholder="Enter Shop Name" name="shopname" [(ngModel)]="shopname" required />
+                <input type="text" placeholder="Enter Email" name="email" [(ngModel)]="email" required />
+                <input type="number" placeholder="Enter Mobile no." name="mobile" [(ngModel)]="mobile" required />
+                <textarea class="form-control" placeholder="Address" [(ngModel)]="address" style=" height:auto; width:100%;" rows="3"></textarea>
+                <ion-item style="border: 1px solid #3880ff;border-radius: 2px;">
+                  <ion-label>Select Location</ion-label>
+                  <ion-select placeholder="Select One" [(ngModel)]="location" (ionChange)="change($event)">
+                    <ion-select-option value="{{item.LocationID}}" *ngFor="let item of yLocation">{{item.LocationName}}</ion-select-option>
+                  </ion-select>
+                </ion-item>
+                <input type="number" placeholder="Pin Code" name="pin" (change)="checkPinCode(pin)" [(ngModel)]="pin" required />
+                <input type="password" placeholder="Enter Your Password" name="password" [(ngModel)]="password" required />
+                <input type="password" placeholder="Confirm Your Password" name="password" [(ngModel)]="password1" required />
+                <p class="sCenter">
+                  <ion-button shape="round" fill="outline" (click)="register(firstname,lastname,shopname,email,mobile,address,location,pin,password,password1)">Register
+                  </ion-button>
+                </p>
+              </div>
+            </ion-col>
+          </ion-row>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>
+<ion-footer>
+  <div class="container">
+    <ion-button shape="round" fill="outline" (click)="login()" color="primary">Login</ion-button>
+    <span class="psw" (click)="forget()">Forgot password?</span>
+  </div>
+</ion-footer>

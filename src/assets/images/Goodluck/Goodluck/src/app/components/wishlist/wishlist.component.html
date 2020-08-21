@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Wishlist</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="row" style="padding-top:3px">
+    <div class="column" *ngFor="let product of cartItems; let i=index">
+      <div class="card">
+        <img src="https://rbtech.in/GOODLUCK/{{product.product.image_small}}" (click)="productDetail(product.product.PID,product.product.ProductName)"/>
+        <h6 class="fonstsize">{{product.product.ProductName}}</h6>
+        <div class="top-right" (click)="removeFromCart(product,i)">
+          <ion-icon name="trash" style="font-size: 1.0rem;"></ion-icon>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

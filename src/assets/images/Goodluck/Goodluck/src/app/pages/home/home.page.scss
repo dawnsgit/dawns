@@ -1,0 +1,219 @@
+.iconsui{
+    font-size: 2.8rem;
+     padding-left: 20px;
+     color: #3880FF;
+}
+.google-bg {
+  --background: linear-gradient(var(--ion-color-primary), white);
+  }
+.cardui{
+        border: 1px solid #3880FF !important;
+        border-radius: 10px;
+}
+.logo{
+        height: 60px;
+        width: auto;
+       }
+      .verticalScrollContainer {
+        display: -webkit-box;
+        width: 100%;
+        overflow: scroll;
+      }
+      
+      .verticalScrollContainer1 {
+        display: -webkit-box;
+        width: 100%;
+        overflow: scroll;
+      }
+      
+      .borderTopBottom {
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+      }
+      
+      .cardVertical {
+        width: 288px;
+        height: 180px;
+        border-radius: 10px;
+      }
+      
+      .header-md:after {
+        background-image: none;
+      }
+      
+      .VerticalCards {
+        width: 110px;
+        min-width: 110px;
+        margin: 10px 0;
+        justify-content: flex-start;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      
+        .circleCenetr {
+          border: 1px solid gray;
+          width: 65px;
+          height: 65px;
+          /* background: red; */
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      
+          ion-avatar {
+            width: 55px;
+            height: 55px;
+          }
+        }
+      }
+      
+      
+      .verticalScrollContainerWhatsNew {
+        display: -webkit-box;
+        width: 100%;
+        overflow: scroll;
+      
+        .cardVertical {
+          width: 145px;
+          height: 135px;
+          background-position: center !important;
+          background-size: cover !important;
+        }
+      
+      }
+      
+
+      //sliding Caed
+      .thumnails{
+        overflow-x: scroll;
+        overflow-y: hidden;
+        .list-thumbnail{
+          height: 100%;
+          white-space: nowrap;
+          padding-left: 10px;
+          .img-thumb{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            border: 1px solid #3880ff !important;border-radius: 10px;
+            display: inline-block;
+           /*  border: 1px solid #ddd; */
+            border-radius: 4px;
+            /* padding: 3px; */
+            width: 150px;
+            height: 100px;
+         /*    margin:0 2px 10px 0;  */
+            line-height: 60px;
+          }
+          .img-thumb1{
+            background-color: white;
+            display: inline-block;
+           /*  border: 1px solid #ddd; */
+            border-radius: 4px;
+            /* padding: 3px; */
+            width: 180px;
+            height: 170px;
+         /*    margin:0 2px 10px 0;  */
+            line-height: 60px;
+          }
+          .selected-img{
+            border: 2px solid color(colors, primary);
+          }
+        }
+      }
+      ::-webkit-scrollbar { 
+        display: none; 
+      }
+      .img1{
+      height:100px;
+      width: 150px;
+      }
+      .title{
+        text-align: center;
+        font-display: inline-block;
+        color: #0e96c8;
+      }
+      .title1{
+        text-align: center;
+        font-display: inline-block;
+        color: white;
+      }
+      /* Second scroll */
+      .thumnails1{
+        overflow-x: scroll;
+        overflow-y: hidden;
+        .list-thumbnail1{
+          height: 100%;
+          white-space: nowrap;
+          padding-left: 10px;
+          .img-thumb1{
+            background-color: white;
+            display: inline-block;
+           /*  border: 1px solid #ddd; */
+            border-radius: 4px;
+            /* padding: 3px; */
+            width: 180px;
+            height: 100px;
+         /*    margin:0 2px 10px 0;  */
+            line-height: 10px;
+          }
+          .selected-img{
+            border: 2px solid color(colors, primary);
+          }
+        }
+      }
+      .img2{
+        height:130px;
+        width: 180px;
+        }
+
+     .bg{
+      background-color: #3880ff;
+     }
+      
+     * {
+      box-sizing: border-box;
+    }
+    
+    
+    
+    /* Float four columns side by side */
+    .column {
+      float: left;
+      width: 50%;
+      padding: 0 10px;
+    }
+    
+    /* Remove extra left and right margins, due to padding */
+    .row {margin: 0 -5px;}
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Responsive columns */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 50%;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+    
+    /* Style the counter cards */
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      // padding: 16px;
+      padding-bottom: 0px;
+      padding-top: 14px;
+      padding-right: 14px;
+      padding-left: 14px;
+      text-align: center;
+      border: 1px solid #3880ff !important;border-radius: 10px;
+      // background-color: #3880ff;
+    }
+    .fonstsize{
+      font-size: 14px;
+    }

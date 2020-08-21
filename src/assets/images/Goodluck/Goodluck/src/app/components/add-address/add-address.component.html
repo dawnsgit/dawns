@@ -1,0 +1,82 @@
+<!-- <div mat-dialog-content align="center">
+  <ion-button shape="round" fill="outline" (click)="checkGPSPermission()">
+    <ion-icon slot="start" name="location-outline" ></ion-icon>
+    Use My Current Location</ion-button>
+  <ion-list lines="full" class="ion-no-margin ion-no-padding">
+    <ion-item>
+      <ion-label position="stacked">First Name <ion-text color="danger">*</ion-text></ion-label>
+      <ion-input required type="text" oninput="handleFirstNameValue(event)"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Last Name <ion-text color="danger">*</ion-text></ion-label>
+      <ion-input required type="text" oninput="handleLastNameValue(event)"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Last Name <ion-text color="danger">*</ion-text></ion-label>
+      <ion-input required type="text" oninput="handleLastNameValue(event)"></ion-input>
+    </ion-item>
+    <ion-item>
+      <textarea class="form-control" placeholder="Address"  style=" height:auto; width:100%;" rows="3"></textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">City<ion-text color="danger">*</ion-text></ion-label>
+      <ion-input required type="text" oninput="handleLastNameValue(event)"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">PinCode<ion-text color="danger">*</ion-text></ion-label>
+      <ion-input required type="number" oninput="handleLastNameValue(event)"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">State<ion-text color="danger">*</ion-text></ion-label>
+      <ion-input required type="text" oninput="handleLastNameValue(event)"></ion-input>
+    </ion-item>
+  </ion-list>
+ </div>
+ <div mat-dialog-actions align="end">
+   <button  mat-raised-button color="warn" (click)="onNoClick()">Close</button>
+   <button mat-raised-button color="primary" (click)="onNoClick()">Save</button>
+ </div> -->
+ <ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="end" (click)="dismiss()">
+      <ion-button>Close</ion-button>
+       </ion-buttons>
+    <ion-title>Add Address</ion-title>
+  </ion-toolbar>
+</ion-header>
+ <ion-content class="google-bg">
+  <div class="main">
+    <div class="card-columns">
+      <div class="card bg-light">
+        <div class="card-body text-center">
+          <ion-row>
+            <ion-col>
+              <div class="container">
+                <ion-button shape="round" fill="outline" (click)="checkGPSPermission()">
+                  <ion-icon slot="start" name="location-outline" ></ion-icon>
+                  Use My Current Location</ion-button>
+                <input type="text" placeholder="Enter First Name" [(ngModel)]="firstname" name="firstname"  required />
+                <input type="text" placeholder="Enter Last Name" [(ngModel)]="lastname" name="lastname"  required />
+                <input type="text" placeholder="Enter Shop Name" name="shopname" [(ngModel)]="shopname" required />
+                <input type="number" placeholder="Enter Mobile no." name="mobile" [(ngModel)]="mobile" required />
+                <textarea class="form-control" placeholder="Address" [(ngModel)]="address" style=" height:auto; width:100%;" rows="3"></textarea>
+                <ion-item style="border: 1px solid #3880ff;border-radius: 2px;">
+                  <ion-label>Select Location</ion-label>
+                  <ion-select placeholder="Select One" [(ngModel)]="location" (ionChange)="change($event)">
+                    <ion-select-option value="{{item.LocationID}}" *ngFor="let item of yLocation">{{item.LocationName}}</ion-select-option>
+                  </ion-select>
+                </ion-item>
+                <input type="number" placeholder="Pin Code" name="pin" (keyup)="onKey($event)" [(ngModel)]="pin" required />
+                               <p class="sCenter">
+                  <ion-button shape="round"  (click)="addAddress(firstname,lastname,shopname,email,mobile,address,location,pin)">Add Address
+                  </ion-button>
+                </p>
+              </div>
+            </ion-col>
+          </ion-row>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

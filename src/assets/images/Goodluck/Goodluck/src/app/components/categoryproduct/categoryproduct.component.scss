@@ -1,0 +1,313 @@
+.br{
+    border: 1px solid #3880FF !important;border-radius: 10px;
+}
+ion-thumbnail {
+    border-radius: 4px;
+    border-color: #3880FF ;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+       width: 90px;
+      height: 90px;
+  }
+  
+  .verticalScrollContainer {
+    display: -webkit-box;
+    width: 100%;
+    overflow: scroll;
+  }
+  
+  .verticalScrollContainer1 {
+    display: -webkit-box;
+    width: 100%;
+    overflow: scroll;
+  }
+  
+  .borderTopBottom {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+  
+  .cardVertical {
+    width: 248px;
+    // height: 180px;
+    // background-position: center !important;
+    // background-size: cover !important;
+  }
+  
+  .overlay {
+    width: 100%;
+    height: 100%;
+    background: #00000047;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+  
+    .title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  
+    .smallTitle {
+      font-size: 12px;
+    }
+  
+    .bottomText {
+      padding-bottom: 8px;
+      display: flex;
+      flex-direction: column;
+      background: radial-gradient(#000000d9, transparent);
+    }
+  }
+  
+  .smallIMg {
+    // width: 12px;
+    margin-right: 5px;
+  }
+  
+  .sameLine {
+    padding-top: 1px;
+    display: -webkit-box;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+  
+    ion-text {
+      font-size: 12px;
+      color: #b71c1c;
+    }
+  }
+  
+  .header-md:after {
+    background-image: none;
+  }
+  
+  .VerticalCards {
+    width: 110px;
+    min-width: 110px;
+    margin: 10px 0;
+    justify-content: flex-start;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  
+    .circleCenetr {
+      border: 1px solid gray;
+      width: 65px;
+      height: 65px;
+      /* background: red; */
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      ion-avatar {
+        width: 55px;
+        height: 55px;
+      }
+    }
+  
+    .bottomText {
+      padding-bottom: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  
+      .VerticalCardsTitle {
+        font-size: small;
+        margin: 12px 0px 12px 0px;
+        font-weight: bold;
+      }
+  
+      .smallTitle {
+        font-size: 12px;
+      }
+    }
+  }
+  
+  .brands {
+    padding-top: 0px;
+    font-weight: bold;
+  }
+  
+  ion-item.itemBottomTimeCost {
+    --inner-border-width: 0 0 0px 0;
+  
+    ion-text {
+      font-size: small;
+      margin: 0px 22px 0px 0px;
+      color: #455a64;
+    }
+  
+    span {
+      font-size: 18px;
+    }
+  
+    .paddingRight {
+      margin-left: 72px;
+    }
+  }
+  
+  ion-list-header {
+    border-bottom: 0.5px solid var(--ion-color-light-shade);
+    border-top: 0.5px solid var(--ion-color-light-shade);
+  }
+  
+  ion-text.mediumText {
+    padding: 0px 12px 0px 15px;
+    // border-left: 1px solid #455a64;
+    // border-right: 1px solid #455a64;
+  }
+  
+  .paraSmallExtraa {
+    color: #455a64;
+    font-size: 5px;
+  }
+  
+  .whatsNew {
+    padding: 40px 0px;
+    background: #e1f5fe;
+  }
+  
+  .verticalScrollContainerWhatsNew {
+    display: -webkit-box;
+    width: 100%;
+    overflow: scroll;
+  
+    .cardVertical {
+      width: 145px;
+      height: 135px;
+      background-position: center !important;
+      background-size: cover !important;
+    }
+  
+    .thumbItemAlong {
+      width: 125px;
+      /* height: 125px; */
+      margin: 8px;
+    }
+  
+    .overlay {
+      background: none;
+  
+      .bottomText {
+        background: transparent;
+      }
+  
+      .title {
+        font-size: 12px;
+        font-weight: bold;
+        padding: 16px 0px 16px 0px;
+        text-align: center;
+      }
+  
+      .smallTitle {
+        font-size: 12px;
+        text-align: center;
+      }
+    }
+  }
+  
+  .PWaScreen {
+    display: none;
+  }
+  
+  
+
+  @media screen and (min-width: 1024px) {
+    .smallScreen {
+      display: none;
+    }
+  
+    .PWaScreen {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      overflow-x: scroll;
+    }
+  
+   
+    // ion-thumbnail {
+    //   width: 550px;
+    //   height: 550px;
+    // }
+  
+    ion-item.itemBottomTimeCost .paddingRight {
+      margin-left: 136px;
+    }
+  
+    ion-label {
+      h2 {
+        font-size: 18px;
+      }
+  
+      .paraSmallExtraa {
+        color: #455a64;
+        font-size: 14px;
+      }
+    }
+  
+    .sameLine ion-text {
+      font-size: 14px;
+      color: #b71c1c;
+    }
+  
+    ion-avatar {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .VerticalCards {
+      width: 120px;
+    }
+  
+    .VerticalCards .circleCenetr {
+      border: 1px solid gray;
+      width: 110px;
+      height: 110px;
+    }
+  
+    .VerticalCards .circleCenetr ion-avatar {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  
+  ion-toolbar {
+    --background: var(--color-toolbar-background);
+    color: var(--color-toolbar-text);
+  }
+  .verticalScrollContainer {
+    background: var(--color-toolbar-background);
+  }
+  
+  ion-card {
+    --background: #54524f
+    }
+    .img1{
+      width: 100px;
+      height: 100px;
+      border-color: #3880FF;
+      padding: 5px;
+      }
+      .top-right {
+        position: absolute;
+        top: 8px;
+        right: 16px;
+      }
+      .sc-ion-label-md-s p{
+        font-size: 11px;
+      }
+      .name{
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 10px;
+        color: black;
+        border-radius: 10px;
+      }
+      .list-md{
+        padding-top: 0px;
+      }
+      ion-item{ --border-color: #3880FF; }
