@@ -1,0 +1,10 @@
+.transparent_header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1024 !important;
+}
+
+.header_default {
+    background-color: #fff;;
+}
