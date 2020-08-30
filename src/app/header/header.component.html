@@ -31,7 +31,10 @@
           <div class="row">
              <div class="col-md-2 col-sm-12 col-xs-12">
                 <div class="logo-unit"> <a href="index.html"> <img class="img-responsive logo_transparent_static visible" src="assets/images/logo.png" style="width: 190px;" alt="Classic LMS"> <img class="img-responsive logo_colored_fixed hidden" src="assets/images/logo.png" style="width: 253px;" alt="Classic LMS"> </a></div>
-                <button type="button" class="navbar-toggle collapsed hidden-lg hidden-md" data-toggle="collapse" data-target="#header_menu_toggler"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <!-- data-toggle="collapse" data-target="#header_menu_toggler" aria-controls="header_menu_toggler" aria-expanded="false" aria-label="Toggle navigation" -->
+                <button type="button" (click)="toggleMenu()"  class="navbar-toggle collapsed hidden-lg hidden-md" > 
+                   <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> 
+               </button>
              </div>
              <div class="col-xs-12 col-sm-12 visible-xs visible-sm">
                 <div class="collapse navbar-collapse header-menu-mobile" id="header_menu_toggler">
