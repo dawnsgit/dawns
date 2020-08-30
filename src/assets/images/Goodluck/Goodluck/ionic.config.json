@@ -1,7 +1,0 @@
-{
-  "name": "inventory",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "angular"
-}
